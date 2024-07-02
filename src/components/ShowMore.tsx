@@ -1,3 +1,4 @@
+"use client";
 import { ShowMoreProps } from "@/types/index";
 import { useRouter } from "../../node_modules/next/navigation";
 import { updateSearchParams } from "../../utils/index";

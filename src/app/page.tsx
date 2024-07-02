@@ -2,6 +2,7 @@ import CarCard from "@/components/CarCard";
 import ShowMore from "@/components/ShowMore";
 import { fuels, yearsOfProduction } from "@/Constants/index";
 import { HomeProps } from "@/types/index";
+import { Fragment } from "react";
 import { fetchCars } from "../../utils/index";
 import CustomFilter from "../components/CustomFilter";
 import Hero from "../components/Hero";
@@ -46,8 +47,10 @@ export default async function Home({ searchParams }: HomeProps) {
           {!isDataEmpty ? (
             <section className="min-w-full">
               <div className="home__cars-wrapper">
-                {allCars?.map((car) => (
-                  <CarCard car={car} />
+                {allCars?.map((car, i) => (
+                  <Fragment key={car.city_mpg + i}>
+                    <CarCard car={car} />
+                  </Fragment>
                 ))}
               </div>
               <ShowMore
