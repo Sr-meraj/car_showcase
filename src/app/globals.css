@@ -70,7 +70,7 @@
 }
 
 .home__filters {
-  @apply mt-12 w-full flex-between items-center flex-wrap gap-5;
+  @apply mt-12 w-full flex-between items-start flex-wrap gap-5;
 }
 
 .home__filter-container {
@@ -78,7 +78,7 @@
 }
 
 .home__cars-wrapper {
-  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
+  @apply grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14 justify-center;
 }
 
 .home__error-container {
@@ -174,7 +174,7 @@
 }
 
 .footer__link {
-  @apply flex flex-col gap-6 text-base min-w-[170px];
+  @apply flex flex-col gap-4 md:gap-6 text-base min-w-[170px];
 }
 
 .footer__copyrights {
@@ -188,7 +188,7 @@
 
 /* START: searchbar styles */
 .searchbar {
-  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
+  @apply flex items-start justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
 }
 
 .searchbar__item {

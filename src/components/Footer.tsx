@@ -1,4 +1,4 @@
-import { footerLinks } from "../../Contants/index";
+import { footerLinks } from "@/Constants/index";
 import Image from "../../node_modules/next/image";
 import Link from "../../node_modules/next/link";
 
